@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start --port 3050",
     "lint": "eslint",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "monday:inspect": "node scripts/monday-inspect.mjs",
+    "test": "node --import ./tests/register.mjs --test --test-isolation=none tests/*.test.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
